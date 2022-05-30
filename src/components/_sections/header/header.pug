@@ -1,0 +1,14 @@
+include ../../_ui/svg/svg.pug
+include ../../_ui/navigation/navigation.pug
+
+header( class="header" )
+  div( class="container-fluid header__container" )
+    button( class="burger header__burger" )
+      span( class="burger__item" )
+    div( class="row header__row" )
+      div( class="col-2 header__col header__col--one" )
+        a( class="header__logo-link", href="#" aria-label="Home page" )
+          +svg( 'logo', 'header__logo-img', '0 0 106 26' )
+      div( class="col-10 header__col header__col--two" )
+        nav( class="header__nav nav-header" )
+          +navigation( 'nav-header', navList )

@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "Jost";
+  src: url("../fonts/Jost-Regular.woff2") format("woff2"), url("../fonts/Jost-Regular.woff") format("woff");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("../fonts/Jost-Medium.woff2") format("woff2"), url("../fonts/Jost-Medium.woff") format("woff");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("../fonts/Jost-SemiBold.woff2") format("woff2"), url("../format/Jost-SemiBold.woff") format("woff");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Medium.woff2") format("woff2"), url("../format/Poppins-Medium.woff") format("woff");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 500;
+}
+:root {
+  box-sizing: border-box;
+  font-size: 16px;
+  --color-bg: #15131A;
+  --color-hover: steelblue;
+}
+
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+
+.body {
+  background: var(--color-bg);
+}
+
+.container-fluid {
+  max-width: 1280px;
+  --bs-gutter-x: 2rem;
+  --bs-gutter-y: 0;
+}
+
+.row {
+  --bs-gutter-x: 2rem;
+  --bs-gutter-y: 0;
+}
+
+.svg {
+  display: block;
+  transition: color 0.2s ease;
+}
+
+.header__container {
+  margin-bottom: 105px;
+  padding-top: 29px;
+}
+.header__col {
+  display: flex;
+  align-items: center;
+}
+.header__col--two {
+  justify-content: flex-end;
+}
+.header__logo-link {
+  color: #fff;
+}
+.header__logo-link:hover {
+  color: var(--color-hover);
+}
+.header__burger {
+  display: none;
+}
+
+.nav-header__list {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.nav-header__item:not(:last-child) {
+  margin-right: var(--bs-gutter-x);
+}
+.nav-header__link {
+  display: block;
+  color: #fff;
+  font: 500 0.875rem/1.5 "Poppins", sans-serif;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+.nav-header__link:hover {
+  color: var(--color-hover);
+}

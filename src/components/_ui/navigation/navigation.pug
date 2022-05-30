@@ -1,0 +1,6 @@
+//- Выводит навигацию
+mixin navigation( mod, navList )
+  ul( class=`${mod}__list` )
+    each item in navList 
+      li( class=`${mod}__item` )
+        a( class=`${mod}__link`, href=item.href )=item.inner

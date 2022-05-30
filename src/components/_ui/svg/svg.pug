@@ -1,0 +1,14 @@
+- 
+  //- Возвращает ширину и высоту для svg
+  function getSize( viewBox ) {
+    let weight = viewBox.split( ' ' )[2];
+    let height = viewBox.split( ' ' )[3];
+
+    return { weight: weight, height: height };
+  }
+
+mixin svg( id, mod, viewBox )
+  - let size = getSize( viewBox );
+
+  svg( class=`svg ${mod}`, width=size.width, height=size.height, viewBox=viewBox )
+    use( href=`assets/img/defs.svg#${id}` )

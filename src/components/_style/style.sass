@@ -1,0 +1,26 @@
+@import '../_fonts/font.sass'
+
+:root
+  box-sizing: border-box
+  font-size: 16px
+
+  --color-bg: #15131A
+  --color-hover: steelblue
+
+*, ::before, ::after
+  box-sizing: inherit
+
+.body
+  background: var( --color-bg )
+
+.container-fluid
+  max-width: 1280px
+  --bs-gutter-x: 2rem
+  --bs-gutter-y: 0
+
+.row
+  --bs-gutter-x: 2rem
+  --bs-gutter-y: 0  
+
+@import '../_ui/svg/svg.sass'
+@import '../_sections/header/header.sass'

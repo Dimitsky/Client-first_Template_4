@@ -1,0 +1,25 @@
+extends ../_layouts/defaults.pug
+
+block variables 
+  - 
+    let navList = [
+      {
+        href: '#',
+        inner: 'About me',
+      }, 
+      {
+        href: '#',
+        inner: 'Services',
+      }, 
+      {
+        href: '#',
+        inner: 'My work',
+      }, 
+      {
+        href: '#',
+        inner: 'Contact me',
+      }, 
+    ];
+
+block header 
+  include ../_sections/header/header.pug

@@ -1,0 +1,44 @@
+.header
+
+  &__container
+    margin-bottom: 105px
+    padding-top: 29px
+
+  &__col
+    display: flex
+    align-items: center
+
+    &--two
+      justify-content: flex-end
+
+  &__logo-link
+    color: #fff
+
+    &:hover
+      color: var( --color-hover )
+
+  &__burger
+    display: none
+
+.nav-header
+
+  &__list
+    display: flex
+    justify-content: flex-end
+    margin: 0
+    padding: 0
+    list-style: none
+
+  &__item:not(:last-child)
+    margin-right: var( --bs-gutter-x )
+
+  &__link
+    display: block
+    color: #fff
+    font: 500 .875rem/1.5 'Poppins', sans-serif
+    text-decoration: none
+    white-space: nowrap
+    transition: color .2s ease
+  
+    &:hover 
+      color: var( --color-hover )
