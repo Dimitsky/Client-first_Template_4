@@ -1,1 +1,373 @@
-<!DOCTYPE html ><html lang="en"><head> <meta/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><link rel="stylesheet" href="assets/css/normalize.min.css"/><link rel="stylesheet" href="assets/css/bootstrap-grid.min.css"/><link rel="stylesheet" href="assets/css/style.css"/><title></title></head><body class="body"><header class="header"><div class="container-fluid header__container"><button class="burger header__burger"><span class="burger__item"></span></button><div class="row header__row"><div class="col-2 header__col header__col--one"><a class="header__logo-link" href="#" aria-label="Home page"><svg class="svg header__logo-img" height="26" viewBox="0 0 106 26"><use href="assets/img/defs.svg#logo"></use></svg></a></div><div class="col-10 header__col header__col--two"><nav class="header__nav nav-header"><ul class="nav-header__list"><li class="nav-header__item"><a class="nav-header__link" href="#">About me</a></li><li class="nav-header__item"><a class="nav-header__link" href="#">Services</a></li><li class="nav-header__item"><a class="nav-header__link" href="#">My work</a></li><li class="nav-header__item"><a class="nav-header__link" href="#">Contact me</a></li></ul></nav></div></div></div></header><main class="main"></main></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/normalize.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/script.js" defer="defer"></script>
+    <title>Client-first Template 4</title>
+</head>
+
+<body class="body">
+    <header class="header">
+        <div class="container-fluid header__container">
+            <div class="row header__row">
+                <div class="col-2 header__col header__col--one"><a class="header__logo-link" href="#" aria-label="Home page"><svg class="svg header__logo-img" height="26" viewBox="0 0 106 26">
+                            <use href="assets/img/defs.svg#logo"></use>
+                        </svg></a></div>
+                <div class="col-10 header__col header__col--two"><button class="burger header__burger" id="burger" type="button" aria-expanded="false"><span class="burger__item"></span></button>
+                    <nav class="header__nav nav-header" id="header-nav">
+                        <ul class="nav__list nav-header__list">
+                            <li class="nav__item nav-header__item"><a class="nav__link nav-header__link" href="#">About me</a></li>
+                            <li class="nav__item nav-header__item"><a class="nav__link nav-header__link" href="#">Services</a></li>
+                            <li class="nav__item nav-header__item"><a class="nav__link nav-header__link" href="#">My work</a></li>
+                            <li class="nav__item nav-header__item"><a class="nav__link nav-header__link" href="#">Contact me</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="hero">
+            <div class="container-fluid hero__container">
+                <div class="row">
+                    <div class="col-12 col-md-7"><span class="c hero__c">HELLO! I AM JAMES ROBERTSON</span>
+                        <h1 class="h h--1 hero__h">Building Delightful Design Experinces for Users.</h1>
+                        <p class="p p--big hero__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque tempor, malesuada adipiscing congue diam.</p><button class="b hero__b">Start a Project</button>
+                    </div>
+                    <div class="col-12 col-md-5 hero__col col-hero">
+                        <div class="col-hero__body">
+                            <picture>
+                                <source type="image/webp" srcset="assets/img/hero/i-1@2x.webp 2x, assets/img/hero/i-1@1x.webp 1x" />
+                                <source type="image/jpg" srcset="assets/img/hero/i-1@2x.jpg 2x, assets/img/hero/i-1@1x.jpg 1x" /><img class="col-hero__img" src="assets/img/hero/i-1@1x.jpg" alt="My Photo" />
+                            </picture>
+                            <div class="col-hero__contact contact-col-hero"><span class="contact-col-hero__desc">Contact me at</span><a class="contact-col-hero__email" href="mailto:james@finsweet.com">james@finsweet.com</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container-fluid about__container">
+                <div class="row about__top">
+                    <div class="col-12 col-lg-3 col-xl-2">
+                        <h2 class="h h--2 about__h">About Me</h2>
+                    </div>
+                    <div class="col-12 col-md-7">
+                        <p class="p p--large about__p">Hi, my name is James and I’m a designer from San Francisco. I have over 10 years experience in leading teams and shipping complex digital products.</p><a class="a about__a">More About Me</a>
+                    </div>
+                </div>
+                <div class="row about__bottom">
+                    <div class="col-12 col-md-4">
+                        <picture>
+                            <source type="image/webp" srcset="assets/img/about/i-1@2x.webp 2x, assets/img/about/i-1@1x.webp 1x" />
+                            <source type="image/jpg" srcset="assets/img/about/i-1@2x.jpg 2x, assets/img/about/i-1@1x.jpg 1x" /><img class="about__img" src="assets/img/about/i-1@1x.jpg" alt="Image" />
+                        </picture>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <picture>
+                            <source type="image/webp" srcset="assets/img/about/i-2@2x.webp 2x, assets/img/about/i-2@1x.webp 1x" />
+                            <source type="image/jpg" srcset="assets/img/about/i-2@2x.jpg 2x, assets/img/about/i-2@1x.jpg 1x" /><img class="about__img" src="assets/img/about/i-1@1x.jpg" alt="Image" />
+                        </picture>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <picture>
+                            <source type="image/webp" srcset="assets/img/about/i-3@2x.webp 2x, assets/img/about/i-3@1x.webp 1x" />
+                            <source type="image/jpg" srcset="assets/img/about/i-3@2x.jpg 2x, assets/img/about/i-3@1x.jpg 1x" /><img class="about__img" src="assets/img/about/i-1@1x.jpg" alt="Image" />
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services">
+            <div class="container-fluid services__container">
+                <div class="row services__row">
+                    <div class="col-12 col-lg-2 services__col">
+                        <h2 class="h h--2 services__h">Services</h2>
+                    </div>
+                    <div class="col-12 col-md-10 col-lg-9 col-xxl-7 services__col">
+                        <ul class="services__list list-services">
+                            <li class="list-services__item">
+                                <h3 class="h h--3 list-services__h">Product Design</h3>
+                            </li>
+                            <li class="list-services__item">
+                                <h3 class="h h--3 list-services__h">Webflow</h3>
+                            </li>
+                            <li class="list-services__item">
+                                <h3 class="h h--3 list-services__h">Branding</h3>
+                            </li>
+                            <li class="list-services__item">
+                                <h3 class="h h--3 list-services__h">Php Development</h3>
+                            </li>
+                            <li class="list-services__item">
+                                <h3 class="h h--3 list-services__h">Visual &amp; UI Design</h3>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="awards">
+            <div class="container-fluid awards__container">
+                <div class="row awards__row">
+                    <div class="col-md-6 col-lg-4 col-xl-3 awards__col">
+                        <h2 class="h h--2 awards__h">Honourable Recognitions &amp; Awards</h2>
+                        <p class="p awards__p">There are many more, review my <a class="a a--sm" href="#">Linkedin</a> profile to find out.</p>
+                    </div>
+                    <div class="col-12 col-md-7 awards__col">
+                        <ul class="awards__list list-awards">
+                            <li class="list-awards__item">
+                                <h3 class="h h--3 list-awards__h">2001</h3>
+                                <h4 class="h h--4 list-awards__desc">Member of jury award</h4>
+                            </li>
+                            <li class="list-awards__item">
+                                <h3 class="h h--3 list-awards__h">2010</h3>
+                                <h4 class="h h--4 list-awards__desc">Design of the day award</h4>
+                            </li>
+                            <li class="list-awards__item">
+                                <h3 class="h h--3 list-awards__h">2018</h3>
+                                <h4 class="h h--4 list-awards__desc">Fans favourite</h4>
+                            </li>
+                            <li class="list-awards__item">
+                                <h3 class="h h--3 list-awards__h">2019</h3>
+                                <h4 class="h h--4 list-awards__desc">Honourable design</h4>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="job">
+            <div class="container-fluid job__container hr">
+                <div class="row job__row">
+                    <div class="col-md-6 col-lg-5 col-xl-4 job__col">
+                        <h2 class="h h--2 job__h">Worked with top company all over</h2>
+                    </div>
+                    <div class="col-md-12 col-lg-7 job__col">
+                        <ul class="job__list list-job">
+                            <li class="list-job__item"><svg class="svg list-job__icon" height="29" viewBox="0 0 142 29">
+                                    <use href="assets/img/defs.svg#job-1"></use>
+                                </svg></li>
+                            <li class="list-job__item"><svg class="svg list-job__icon" height="32" viewBox="0 0 137 32">
+                                    <use href="assets/img/defs.svg#job-2"></use>
+                                </svg></li>
+                            <li class="list-job__item"><svg class="svg list-job__icon" height="29" viewBox="0 0 126 29">
+                                    <use href="assets/img/defs.svg#job-3"></use>
+                                </svg></li>
+                            <li class="list-job__item"><svg class="svg list-job__icon" height="26" viewBox="0 0 124 26">
+                                    <use href="assets/img/defs.svg#job-4"></use>
+                                </svg></li>
+                            <li class="list-job__item"><svg class="svg list-job__icon" height="32" viewBox="0 0 137 32">
+                                    <use href="assets/img/defs.svg#job-5"></use>
+                                </svg></li>
+                            <li class="list-job__item"><svg class="svg list-job__icon" height="26" viewBox="0 0 124 26">
+                                    <use href="assets/img/defs.svg#job-6"></use>
+                                </svg></li>
+                            <li class="list-job__item"><svg class="svg list-job__icon" height="29" viewBox="0 0 142 29">
+                                    <use href="assets/img/defs.svg#job-7"></use>
+                                </svg></li>
+                            <li class="list-job__item"><svg class="svg list-job__icon" height="29" viewBox="0 0 126 29">
+                                    <use href="assets/img/defs.svg#job-8"></use>
+                                </svg></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="work">
+            <div class="container-fluid work__container hr">
+                <div class="row work__row">
+                    <div class="col-md-6 col-lg-7 col-xl-5"><span class="c work__c">My Recent Work</span>
+                        <h2 class="h h--2 work__h">I love taking Design from vision to reality.</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 work__col">
+                        <ul class="work__list list-work">
+                            <li class="list-work__item list-work__item--small"><a class="list-work__link" href="#" title="See work">
+                                    <picture>
+                                        <source type="image/webp" srcset="assets/img/work/i-1@2x.webp 2x, assets/img/work/i-1@1x.webp 1x" />
+                                        <source type="image/jpg" srcset="assets/img/work/i-1@2x.jpg 2x, assets/img/work/i-1@1x.jpg 1x" /><img class="list-work__img" src="assets/img/work/i-1@1x.jpg" alt="Work screenshot" />
+                                    </picture>
+                                </a></li>
+                            <li class="list-work__item"><a class="list-work__link" href="#" title="See work">
+                                    <picture>
+                                        <source type="image/webp" srcset="assets/img/work/i-2@2x.webp 2x, assets/img/work/i-2@1x.webp 1x" />
+                                        <source type="image/jpg" srcset="assets/img/work/i-2@2x.jpg 2x, assets/img/work/i-2@1x.jpg 1x" /><img class="list-work__img" src="assets/img/work/i-2@1x.jpg" alt="Work screenshot" />
+                                    </picture>
+                                </a></li>
+                            <li class="list-work__item"><a class="list-work__link" href="#" title="See work">
+                                    <picture>
+                                        <source type="image/webp" srcset="assets/img/work/i-3@2x.webp 2x, assets/img/work/i-3@1x.webp 1x" />
+                                        <source type="image/jpg" srcset="assets/img/work/i-3@2x.jpg 2x, assets/img/work/i-3@1x.jpg 1x" /><img class="list-work__img" src="assets/img/work/i-3@1x.jpg" alt="Work screenshot" />
+                                    </picture>
+                                </a></li>
+                            <li class="list-work__item list-work__item--small"><a class="list-work__link" href="#" title="See work">
+                                    <picture>
+                                        <source type="image/webp" srcset="assets/img/work/i-4@2x.webp 2x, assets/img/work/i-4@1x.webp 1x" />
+                                        <source type="image/jpg" srcset="assets/img/work/i-4@2x.jpg 2x, assets/img/work/i-4@1x.jpg 1x" /><img class="list-work__img" src="assets/img/work/i-4@1x.jpg" alt="Work screenshot" />
+                                    </picture>
+                                </a></li>
+                        </ul><a class="b work__b" href="#">View all projects</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimonial">
+            <div class="container-fluid testimonial__container">
+                <div class="row testimonial__row">
+                    <div class="col-md-6 col-xl-5"><span class="c testimonial__c">testimonial</span>
+                        <h2 class="h h--2 testimonial__h">What people are saying About me</h2>
+                    </div>
+                </div>
+                <ul class="row testimonial__row testimonial__list list-testimonial">
+                    <li class="col-12 col-md-6 col-lg-4 list-testimonial__item">
+                        <div class="list-testimonial__body"><svg class="svg list-testimonial__icon" height="28" viewBox="0 0 43 28">
+                                <use href="assets/img/defs.svg#quotes"></use>
+                            </svg>
+                            <p class="p p--large list-testimonial__p">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical.</p>
+                            <div class="list-testimonial__info info-list-testimonial">
+                                <div class="info-list-testimonial__img-wrap">
+                                    <picture>
+                                        <source type="image/webp" srcset="assets/img/testimonial/i-1@2x.webp 2x, assets/img/testimonial/i-1@1x.webp 1x" />
+                                        <source type="image/jpg" srcset="assets/img/testimonial/i-1@2x.jpg 2x, assets/img/testimonial/i-1@1x.jpg 1x" /><img class="info-list-testimonial__img" src="assets/img/testimonial/i-1@1x.jpg" alt="Client's photo" />
+                                    </picture>
+                                </div>
+                                <div class="info-list-testimonial__wrap"><span class="p p--big info-list-testimonial__name">Steve Mark</span><span class="p info-list-testimonial__job">Founder &amp; Leader</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-4 list-testimonial__item">
+                        <div class="list-testimonial__body"><svg class="svg list-testimonial__icon" height="28" viewBox="0 0 43 28">
+                                <use href="assets/img/defs.svg#quotes"></use>
+                            </svg>
+                            <p class="p p--large list-testimonial__p">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical.</p>
+                            <div class="list-testimonial__info info-list-testimonial">
+                                <div class="info-list-testimonial__img-wrap">
+                                    <picture>
+                                        <source type="image/webp" srcset="assets/img/testimonial/i-1@2x.webp 2x, assets/img/testimonial/i-1@1x.webp 1x" />
+                                        <source type="image/jpg" srcset="assets/img/testimonial/i-1@2x.jpg 2x, assets/img/testimonial/i-1@1x.jpg 1x" /><img class="info-list-testimonial__img" src="assets/img/testimonial/i-1@1x.jpg" alt="Client's photo" />
+                                    </picture>
+                                </div>
+                                <div class="info-list-testimonial__wrap"><span class="p p--big info-list-testimonial__name">Steve Mark</span><span class="p info-list-testimonial__job">Founder &amp; Leader</span></div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-12 col-md-6 col-lg-4 list-testimonial__item">
+                        <div class="list-testimonial__body"><svg class="svg list-testimonial__icon" height="28" viewBox="0 0 43 28">
+                                <use href="assets/img/defs.svg#quotes"></use>
+                            </svg>
+                            <p class="p p--large list-testimonial__p">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical.</p>
+                            <div class="list-testimonial__info info-list-testimonial">
+                                <div class="info-list-testimonial__img-wrap">
+                                    <picture>
+                                        <source type="image/webp" srcset="assets/img/testimonial/i-1@2x.webp 2x, assets/img/testimonial/i-1@1x.webp 1x" />
+                                        <source type="image/jpg" srcset="assets/img/testimonial/i-1@2x.jpg 2x, assets/img/testimonial/i-1@1x.jpg 1x" /><img class="info-list-testimonial__img" src="assets/img/testimonial/i-1@1x.jpg" alt="Client's photo" />
+                                    </picture>
+                                </div>
+                                <div class="info-list-testimonial__wrap"><span class="p p--big info-list-testimonial__name">Steve Mark</span><span class="p info-list-testimonial__job">Founder &amp; Leader</span></div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="blog">
+            <div class="container-fluid blog__container">
+                <div class="row blog__row">
+                    <div class="col-md-7 col-lg-4 blog__col">
+                        <h2 class="h h--2 blog__h">My Latest Blog <br> Related Design &amp; Tech</h2>
+                        <p class="p blog__p">There are many more, review my <a class="a a--sm blog__a" href="#" title="profile">Medium</a> <br> profile to find out.</p>
+                    </div>
+                    <ul class="col-md-12 col-lg-7 blog__col blog__list list-blog blog__list list-blog">
+                        <li class="list-blog__item">
+                            <div class="list-blog__img-wrap">
+                                <picture>
+                                    <source type="image/webp" srcset="assets/img/blog/i-1@2x.webp 2x, assets/img/blog/i-1@1x.webp 1x" />
+                                    <source type="image/jpg" srcset="assets/img/blog/i-1@2x.jpg 2x, assets/img/blog/i-1@1x.jpg 1x" /><img class="list-blog__img" src="assets/img/blog/i-1@1x.jpg" alt="Post's image" />
+                                </picture>
+                            </div>
+                            <div class="list-blog__body body-list-blog"><span class="c body-list-blog__c">PUBLISHED ON MEDIUM.COM</span>
+                                <h2 class="h h--2 body-list-blog__h">The market does quantitative usability tests </h2>
+                                <p class="p body-list-blog__p">Vestibulum at pulvinar nisi, non commodo erat. Aliquam <br> lobortis posuere magna sed tincidunt. Sed facilisis vestibulum.</p>
+                            </div>
+                        </li>
+                        <li class="list-blog__item">
+                            <div class="list-blog__img-wrap">
+                                <picture>
+                                    <source type="image/webp" srcset="assets/img/blog/i-2@2x.webp 2x, assets/img/blog/i-2@1x.webp 1x" />
+                                    <source type="image/jpg" srcset="assets/img/blog/i-2@2x.jpg 2x, assets/img/blog/i-2@1x.jpg 1x" /><img class="list-blog__img" src="assets/img/blog/i-2@1x.jpg" alt="Post's image" />
+                                </picture>
+                            </div>
+                            <div class="list-blog__body body-list-blog"><span class="c body-list-blog__c">PUBLISHED ON MEDIUM.COM</span>
+                                <h2 class="h h--2 body-list-blog__h">Read My Latest Blog <br> Related Design and Tech </h2>
+                                <p class="p body-list-blog__p">Vestibulum at pulvinar nisi, non commodo erat. Aliquam <br> lobortis posuere magna sed tincidunt. Sed facilisis vestibulum.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container-fluid footer__container">
+            <div class="row footer__top top-footer">
+                <div class="col-12 col-md-5 col-lg-6 top-footer__col">
+                    <h2 class="h h--2 footer__h">Have an idea? I can help you to Start your project</h2>
+                    <p class="p p--large footer__p">Say hello to me 👋</p><a class="h h--3 footer__email" href="mailto:james@finsweet.com" title="james@finsweet.com">james@finsweet.com</a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-5 top-footer__col">
+                    <div class="footer__info info-footer">
+                        <div class="info-footer__img-wrap">
+                            <picture>
+                                <source type="image/webp" srcset="assets/img/footer/i-1@2x.webp 2x, assets/img/footer/i-1@1x.webp 1x" />
+                                <source type="image/jpg" srcset="assets/img/footer/i-1@2x.png 2x, assets/img/footer/i-1@1x.png 1x" /><img class="info-footer__img" src="assets/img/footer/i-1@1x.png" alt="My photo" />
+                            </picture>
+                        </div>
+                        <div class="info-footer__wrap">
+                            <h3 class="h h--3 info-footer__name">James Robertson</h3><span class="p p--large info-footer__job">Webflow Developer</span>
+                        </div>
+                    </div>
+                    <ul class="info-footer__social social-info-footer">
+                        <li class="social-info-footer__item"><a class="a a--sm social-info-footer__link" href="#" title="Facebook"><svg class="svg social-info-footer__icon" height="42" viewBox="0 0 42 42">
+                                    <use href="assets/img/defs.svg#facebook"></use>
+                                </svg></a></li>
+                        <li class="social-info-footer__item"><a class="a a--sm social-info-footer__link" href="#" title="Linkedin"><svg class="svg social-info-footer__icon" height="42" viewBox="0 0 42 42">
+                                    <use href="assets/img/defs.svg#linkedin"></use>
+                                </svg></a></li>
+                        <li class="social-info-footer__item"><a class="a a--sm social-info-footer__link" href="#" title="Twitter"><svg class="svg social-info-footer__icon" height="42" viewBox="0 0 42 42">
+                                    <use href="assets/img/defs.svg#twitter"></use>
+                                </svg></a></li>
+                        <li class="social-info-footer__item"><a class="a a--sm social-info-footer__link" href="#" title="Dribbble"><svg class="svg social-info-footer__icon" height="42" viewBox="0 0 42 42">
+                                    <use href="assets/img/defs.svg#dribbble"></use>
+                                </svg></a></li>
+                        <li class="social-info-footer__item"><a class="a a--sm social-info-footer__link" href="#" title="Behance"><svg class="svg social-info-footer__icon" height="42" viewBox="0 0 42 42">
+                                    <use href="assets/img/defs.svg#behance"></use>
+                                </svg></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row footer__bottom bottom-footer">
+                <div class="col-md-5 col-lg-3 bottom-footer__col">
+                    <p class="p footer__copyright">© 2020 Finsweet. Powered by Webflow</p>
+                </div>
+                <div class="col-md-7 col-lg-4 bottom-footer__col">
+                    <nav class="footer__nav nav-footer">
+                        <ul class="nav__list nav-footer__list">
+                            <li class="nav__item nav-footer__item"><a class="nav__link nav-footer__link" href="#">About me</a></li>
+                            <li class="nav__item nav-footer__item"><a class="nav__link nav-footer__link" href="#">Services</a></li>
+                            <li class="nav__item nav-footer__item"><a class="nav__link nav-footer__link" href="#">My work</a></li>
+                            <li class="nav__item nav-footer__item"><a class="nav__link nav-footer__link" href="#">Contact me</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

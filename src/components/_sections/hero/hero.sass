@@ -1,0 +1,58 @@
+.hero
+
+  &__container
+    margin-bottom: var( --section-margin )
+
+  &__col
+    display: flex
+    align-items: flex-start
+    justify-content: flex-end
+
+  &__c, &__h
+    margin-bottom: 23px
+
+  &__c
+    margin-top: 30px
+
+  &__img
+    height: 100%
+    width: 100%
+    object-fit: cover
+
+  &__p
+    max-width: 514px
+    margin-bottom: 40px
+
+.col-hero
+
+  &__body
+    flex-basis: 437px
+
+  &__img
+    margin-bottom: 24px
+
+.contact-col-hero
+  
+  &__desc
+    display: block
+    margin-bottom: 2px
+    color: rgba( 255, 255, 255, .6 )
+    font: 400 1rem/1.445 'Jost', sans-serif
+  
+  &__email
+    display: block
+    color: rgba( 255, 255, 255, .85 )
+    font: 400 1.25rem/1.445 'Jost', sans-serif
+    text-decoration: none
+
+@media screen and ( max-width: 991px )
+  .hero
+
+    &__c
+      margin-top: 0
+
+@media screen and ( max-width: 767px )
+  .hero
+
+    &__col
+      display: none

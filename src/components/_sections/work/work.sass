@@ -1,0 +1,96 @@
+.work
+
+  &__container
+    margin-bottom: var( --section-margin )
+
+  &__row
+    margin-bottom: 80px
+
+  &__col
+    display: flex
+    flex-direction: column
+    align-items: stretch
+
+  &__list
+    display: grid
+    grid-gap: 44px 32px
+    grid-template-columns: repeat( 2, 1fr )
+    grid-template-rows: auto
+    margin: 0 0 64px 0
+    padding: 0
+    list-style: none
+
+  &__c
+    margin-bottom: 24px
+
+  &__b
+    min-width: 222px
+    align-self: center
+
+.list-work
+
+  &__item
+    grid-column: span 1
+    grid-row: span 4
+
+    &--small
+      grid-row: span 3
+
+  &__link
+    position: relative
+    display: block
+    overflow: hidden
+
+    &::after
+      content: "View Project"
+      position: absolute
+      top: 0
+      right: 0
+      bottom: 0
+      left: 0
+      display: flex
+      align-items: center
+      justify-content: center
+      color: var( --color-module-link )
+      font: 500 1.5rem/1.445 'Jost', sans-serif
+      opacity: 0
+      background: rgba( 0, 0, 0, .65 )
+      transition: opacity .4s ease
+
+    &:hover::after
+      opacity: 1
+
+    &:hover .list-work__img
+      transform: scale( 1.5 )
+
+  &__img
+    display: block
+    height: 100%
+    width: 100%
+    object-fit: cover
+    transition: transform .4s ease
+    transform: scale( 1 )
+
+@media screen and ( max-width: 991px )
+  .work
+    --section-margin: 160px
+
+    &__row:nth-child(1)
+      margin-bottom: 40px
+
+    &__list
+      margin-bottom: 40px
+
+@media screen and ( max-width: 767px )
+  .work
+
+    &__list
+      grid-template-columns: 1fr
+      grid-gap: 20px
+
+  .list-work
+    
+    &__link
+      
+      &::after
+        opacity: 1

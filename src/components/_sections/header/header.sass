@@ -1,7 +1,7 @@
 .header
 
   &__container
-    margin-bottom: 105px
+    margin-bottom: calc( var( --section-margin ) - 55px )
     padding-top: 29px
 
   &__col
@@ -20,25 +20,103 @@
   &__burger
     display: none
 
-.nav-header
+.burger 
+  position: absolute
+  top: 10px
+  right: 35px
+  z-index: 1010
+  border: none
+  border-radius: 0
+  height: 60px
+  width: 60px
+  padding: 0
+  background: none
 
-  &__list
-    display: flex
-    justify-content: flex-end
-    margin: 0
-    padding: 0
-    list-style: none
+  &__item
+    position: absolute
+    top: 50%
+    left: 50%
+    border-radius: 3px
+    height: 3px
+    width: 30px
+    background-color: #fff
+    transform: translate( -50%, -50% )
+    transition: background-color 0s .2s
 
-  &__item:not(:last-child)
-    margin-right: var( --bs-gutter-x )
+    [aria-expanded=true] &
+      background-color: transparent
 
-  &__link
+    &::before, &::after
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      border-radius: 3px
+      height: 3px
+      width: 100%
+      background: #fff
+      transition: top .2s .2s ease, transform .2s 0s ease
+
+    [aria-expanded=true] &::before, [aria-expanded=true] &::after
+      transition: top .2s 0s ease, transform .2s .2s ease
+
+    &::before
+      top: -11px
+
+      [aria-expanded=true] &
+        top: 0
+        transform: rotate( 45deg )
+
+    &::after 
+      top: 11px
+
+      [aria-expanded=true] &
+        top: 0
+        transform: rotate( -45deg )
+
+@media screen and ( max-width: 991px )
+  .header
+
+    &__container
+      margin-bottom: calc( var( --section-margin ) )
+
+  .nav-header
+
+    &__list
+      position: absolute
+      top: 0
+      right: 0
+      z-index: 1000
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      height: 100vh
+      max-width: 450px
+      width: 0
+      padding: 0
+      background: var( --color-bg-two)
+      transition: width .4s ease-in-out, visibility 0s .4s ease
+      visibility: hidden
+      overflow: hidden
+
+      &.open
+        right: 0
+        width: 100%
+        transition: width .4s ease-in-out, visibility 0s 0s ease
+        visibility: visible
+
+    &__item:not(:last-child)
+      margin: 0
+
+    &__link
+      font-size: 2rem
+      line-height: 3em
+      text-align: center
+
+  .burger
     display: block
-    color: #fff
-    font: 500 .875rem/1.5 'Poppins', sans-serif
-    text-decoration: none
-    white-space: nowrap
-    transition: color .2s ease
-  
-    &:hover 
-      color: var( --color-hover )
+
+@media screen and ( max-width: 767px )
+  .burger
+    right: 14px

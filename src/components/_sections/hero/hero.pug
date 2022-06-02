@@ -1,0 +1,23 @@
+section( class="hero" )
+  div( class="container-fluid hero__container" )
+    div( class="row" )
+      div( class="col-12 col-md-7" )
+        span( class="c hero__c" ) HELLO! I AM JAMES ROBERTSON
+        h1( class="h h--1 hero__h" ) Building Delightful Design Experinces for Users.
+        p( class="p p--big hero__p" ) Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque tempor, malesuada adipiscing congue diam.
+        button( class="b hero__b" ) Start a Project
+      div( class="col-12 col-md-5 hero__col col-hero" )
+        div( class="col-hero__body" )
+          picture
+            source(
+              type="image/webp", 
+              srcset="assets/img/hero/i-1@2x.webp 2x, assets/img/hero/i-1@1x.webp 1x"
+            )
+            source(
+              type="image/jpg", 
+              srcset="assets/img/hero/i-1@2x.jpg 2x, assets/img/hero/i-1@1x.jpg 1x"
+            )
+            img( class="col-hero__img", src="assets/img/hero/i-1@1x.jpg", alt="My Photo" )
+          div( class="col-hero__contact contact-col-hero")
+            span( class="contact-col-hero__desc" ) Contact me at
+            a( class="contact-col-hero__email", href="mailto:james@finsweet.com" ) james@finsweet.com

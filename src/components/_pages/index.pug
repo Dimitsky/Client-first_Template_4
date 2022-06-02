@@ -2,6 +2,7 @@ extends ../_layouts/defaults.pug
 
 block variables 
   - 
+    let title = 'Client-first Template 4';
     let navList = [
       {
         href: '#',
@@ -23,3 +24,16 @@ block variables
 
 block header 
   include ../_sections/header/header.pug
+
+block main 
+  include ../_sections/hero/hero.pug
+  include ../_sections/about/about.pug
+  include ../_sections/services/services.pug
+  include ../_sections/awards/awards.pug
+  include ../_sections/job/job.pug
+  include ../_sections/work/work.pug
+  include ../_sections/testimonial/testimonial.pug
+  include ../_sections/blog/blog.pug
+
+block footer
+  include ../_sections/footer/footer.pug

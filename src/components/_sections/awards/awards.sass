@@ -1,0 +1,51 @@
+.awards
+  background: var( --color-bg-two )
+
+  &__container
+    margin-bottom: var( --section-margin )
+    padding-top: 128px
+    padding-bottom: 141px
+
+  &__row
+    justify-content: space-between
+
+  &__h
+    margin-bottom: 16px
+
+  &__list
+    display: grid
+    grid-gap: 80px 50px
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: 1fr
+    margin: 0
+    padding: 0
+    list-style: none
+
+.list-awards
+
+  &__h
+    color: #DB79B7
+    margin-bottom: 4px
+
+@media screen and ( max-width: 992px )
+  .awards
+
+    &__container
+      padding-top: 80px
+      padding-bottom: 80px
+
+    &__col:nth-child(1)
+      margin-bottom: 40px
+
+    &__list
+      grid-gap: 40px 40px
+
+@media screen and ( max-width: 767px )
+  .awards
+
+    &__container
+      padding-top: 40px
+      padding-bottom: 40px
+
+    &__list
+      grid-gap: 20px

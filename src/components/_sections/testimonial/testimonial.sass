@@ -1,0 +1,73 @@
+.testimonial
+
+  &__container
+    margin-bottom: calc( var( --section-margin ) - 12px )
+
+  &__row:nth-child(1)
+    margin-bottom: 80px
+
+  &__c
+    margin-bottom: 24px
+
+  &__list
+    margin-bottom: 0
+    padding: 0
+    list-style: none
+  
+.list-testimonial
+
+  &__body
+    padding: 68px 48px 50px
+    background: var( --color-bg-two )
+
+  &__icon
+    margin-bottom: 32px
+
+  &__p
+    margin-bottom: 35px
+
+  &__info
+    display: flex
+  
+.info-list-testimonial
+
+  &__img-wrap
+    border-radius: 50%
+    height: 48px
+    width: 48px
+    margin-right: 16px
+    overflow: hidden
+
+  &__img
+    height: 100%
+    width: 100%
+    object-fit: cover
+
+  &__name, &__job
+    display: block
+
+  &__name
+    line-height: 1.3
+
+  &__job
+    opacity: .5
+
+@media screen and ( max-width: 991px )
+  .testimonial
+
+    &__container
+      margin-bottom: calc( var( --section-margin ) )
+
+    &__row:nth-child(1)
+      margin-bottom: 40px
+
+  .list-testimonial
+
+    &__item
+      margin-bottom: var( --bs-gutter-x )
+
+@media screen and ( max-width: 767px )
+  .list-testimonial
+
+    &__body
+      padding: 40px 20px

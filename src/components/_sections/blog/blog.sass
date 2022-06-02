@@ -1,0 +1,66 @@
+.blog
+
+  &__container
+    margin-bottom: calc( var( --section-margin ) - 80px )
+
+  &__row
+    justify-content: space-between
+
+  &__h
+    margin-bottom: 16px
+
+  &__list
+    margin: 0
+    padding-top: 12px
+    list-style: none
+
+.list-blog
+
+  &__item:not(:last-child)
+    margin-bottom: 32px
+
+  &__item
+    display: flex
+
+  &__img-wrap
+    flex: 0 0 186px
+    margin-right: 32px
+
+  &__img
+    display: block
+    height: 100%
+    width: 100%
+    object-fit: cover
+  
+  &__body
+    padding: 23px 0
+
+.body-list-blog
+
+  &__c
+    margin-bottom: 8px
+
+  &__h
+    margin-bottom: 10px
+
+  &__p
+    opacity: .6
+
+@media screen and ( max-width: 991px )
+  .blog
+
+    &__container
+      margin-bottom: calc( var( --section-margin ) )
+
+    &__col:nth-child(1)
+      margin-bottom: 40px
+  
+@media screen and ( max-width: 767px )
+  .list-blog
+
+    &__item
+      display: block
+
+    &__img-wrap
+      height: 300px
+      margin-right: 0

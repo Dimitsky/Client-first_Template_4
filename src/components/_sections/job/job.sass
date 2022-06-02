@@ -1,0 +1,36 @@
+.job
+
+  &__container
+    margin-bottom: var( --section-margin )
+
+  &__row
+    justify-content: space-between
+
+  &__list
+    display: grid
+    grid-gap: 65px 60px
+    grid-template-columns: repeat( auto-fill, minmax( 124px, 1fr ) )
+    grid-template-rows: 1fr
+    margin: 0
+    padding: 20px 0 0
+    list-style: none
+
+.list-job
+
+  &__icon
+    color: #fff
+
+@media screen and ( max-width: 991px )
+  .job
+    --section-margin: 160px
+
+    &__col:nth-child(1)
+      margin-bottom: 40px
+
+    &__list
+      grid-gap: 40px 40px
+      padding: 0
+
+@media screen and ( max-width: 767px )
+  .job
+    --section-margin: 80px

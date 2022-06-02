@@ -1,0 +1,31 @@
+.b
+  position: relative
+  z-index: 1
+  border: none
+  border-radius: 2.69em
+  display: inline-block
+  min-width: 205px
+  margin: 0
+  padding: 1.06em 1.4em
+  font: 500 1rem/1.5 'Poppins', sans-serif
+  color: #fff
+  text-align: center
+  text-decoration: none
+  cursor: pointer
+  background: linear-gradient( 270deg, #F8766D 0%, #BE7CFF 100% )
+
+  &::before 
+    content: ''
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    z-index: -1
+    border-radius: 2.69em
+    opacity: 0
+    background: linear-gradient( 270deg, #BE7CFF 0%, #F8766D 100% )
+    transition: opacity .4s ease
+
+  &:hover::before 
+    opacity: 1

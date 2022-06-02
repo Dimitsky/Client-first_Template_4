@@ -5,22 +5,73 @@
   font-size: 16px
 
   --color-bg: #15131A
+  --color-bg-two: #0B0B0D
   --color-hover: steelblue
+  --color-link: #CB79B1
+  --color-module-link: #DEDDDF
+
+  --section-margin: 160px
+  --heading-ration: 1
 
 *, ::before, ::after
   box-sizing: inherit
 
+img
+  max-width: 100%
+
 .body
+  max-width: 1920px
+  margin: auto
   background: var( --color-bg )
 
 .container-fluid
-  max-width: 1280px
-  --bs-gutter-x: 2rem
+  max-width: 1360px
+  --bs-gutter-x: 5rem
   --bs-gutter-y: 0
 
 .row
   --bs-gutter-x: 2rem
-  --bs-gutter-y: 0  
+  --bs-gutter-y: 0
 
+.hr
+  position: relative
+
+  &::after
+    content: ""
+    position: absolute
+    right: 16px
+    bottom: calc(var(--section-margin) / -2)
+    height: 1px
+    width: calc(100% - 32px)
+    background: rgba(255, 255, 255, 0.17)
+
+@media screen and ( max-width: 991px )
+  :root
+    font-size: 14px
+    --section-margin: 80px
+    --heading-ration: .8
+
+@media screen and ( max-width: 767px )
+  :root
+    --section-margin: 40px
+
+  .container-fluid
+    --bs-gutter-x: 2rem
+
+@import '../_ui/link/a.sass'
+@import '../_ui/button/b.sass'
+@import '../_ui/caption/c.sass'
+@import '../_ui/heading/h.sass'
+@import '../_ui/paragraph/p.sass'
+@import '../_ui/navigation/navigation.sass'
 @import '../_ui/svg/svg.sass'
 @import '../_sections/header/header.sass'
+@import '../_sections/hero/hero.sass'
+@import '../_sections/about/about.sass'
+@import '../_sections/services/services.sass'
+@import '../_sections/awards/awards.sass'
+@import '../_sections/job/job.sass'
+@import '../_sections/work/work.sass'
+@import '../_sections/testimonial/testimonial.sass'
+@import '../_sections/blog/blog.sass'
+@import '../_sections/footer/footer.sass'

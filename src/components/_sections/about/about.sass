@@ -1,0 +1,26 @@
+.about
+
+  &__container
+    margin-bottom: var( --section-margin )
+
+  &__top
+    justify-content: space-between
+    margin-bottom: 83px
+
+  &__p
+    margin-bottom: 32px
+
+  &__img
+    height: 100%
+    max-height: 499px
+    width: 100%
+    object-fit: cover
+
+@media screen and ( max-width: 767px )
+  .about
+
+    &__top
+      margin-bottom: var( --section-margin )
+
+    &__bottom
+      --bs-gutter-y: 2rem
