@@ -1,0 +1,15 @@
+extends ../_layouts/defaults.pug
+
+block append variables 
+  - 
+    title = 'Client-first Template 4 - About page';
+
+block header 
+  include ../_sections/header/header.pug
+
+block main 
+  include ../_sections/hero-about/hero-about.pug
+  include ../_sections/qualifications/qualifications.pug
+
+block footer 
+  include ../_sections/footer/footer.pug

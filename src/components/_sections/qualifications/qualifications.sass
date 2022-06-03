@@ -1,0 +1,48 @@
+.qualifications
+
+  &__container
+    margin-bottom: calc( var( --section-margin ) - 80px )
+
+  &__row-one
+    justify-content: space-between
+
+  &__c
+    margin-bottom: 24px
+
+  &__list
+    border-left: 1px solid rgba( 255, 255, 255, .12)
+    max-width: 500px
+    margin: 0
+    padding: 0 0 0 72px
+    list-style: none
+
+.list-qualifications
+
+  &__item:not(:last-child)
+    margin-bottom: 64px
+
+  &__h
+    margin-bottom: 5px
+  
+  &__h-sub
+    margin-bottom: 10px
+
+@media screen and ( max-width: 991px )
+  .qualifications
+
+    &__container
+       margin-bottom: calc( var( --section-margin ) )
+
+    &__list
+      padding-left: 0
+      border-left: 0
+
+  .list-qualifications
+    
+    &__item:not(:last-child)
+      margin-bottom: 30px
+
+  .row-one-qualifications
+
+    &__col:nth-child(1)
+      margin-bottom: 30px

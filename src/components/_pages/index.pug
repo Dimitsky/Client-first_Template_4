@@ -1,26 +1,8 @@
 extends ../_layouts/defaults.pug
 
-block variables 
+block append variables 
   - 
-    let title = 'Client-first Template 4';
-    let navList = [
-      {
-        href: '#',
-        inner: 'About me',
-      }, 
-      {
-        href: '#',
-        inner: 'Services',
-      }, 
-      {
-        href: '#',
-        inner: 'My work',
-      }, 
-      {
-        href: '#',
-        inner: 'Contact me',
-      }, 
-    ];
+    title = 'Client-first Template 4 - Home page';
 
 block header 
   include ../_sections/header/header.pug
