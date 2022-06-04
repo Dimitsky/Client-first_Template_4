@@ -1,0 +1,47 @@
+.contact
+
+  &__container
+    margin-bottom: calc( var( --section-margin ) - 80px )
+    padding-top: 40px
+
+  &__row
+    justify-content: center
+
+.form-contact
+
+  &__c
+    margin-bottom: 24px
+
+  &__h
+    margin-bottom: 24px
+
+  &__p
+    margin-bottom: 62px
+
+  &__wrap
+    margin-bottom: 40px
+
+  &__i:not(:last-of-type) 
+    margin-bottom: 30px
+
+  &__i:last-of-type
+    margin-bottom: 20px
+
+  &__textarea
+    min-height: 112px
+    margin-bottom: 42px
+    color: rgba( 255, 255, 255, .37)
+    resize: none
+
+    &::placeholder
+      color: rgba( 255, 255, 255, .37)
+
+  &__b
+    min-width: 152px
+
+@media screen and ( max-width: 991px )
+  .contact
+
+    &__container
+      margin-bottom: var( --section-margin )
+      padding-top: 0

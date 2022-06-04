@@ -174,6 +174,29 @@ img {
   line-height: 1.445;
 }
 
+.i {
+  display: block;
+  border: none;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0;
+  width: 100%;
+  padding: 0.66em 0;
+  color: rgba(255, 255, 255, 0.87);
+  font: 400 1rem/1.445 "Jost", sans-serif;
+  background: none;
+}
+.i::placeholder {
+  color: rgba(255, 255, 255, 0.87);
+  font: 400 1rem/1.445 "Jost", sans-serif;
+}
+
+.l {
+  display: block;
+  color: rgba(255, 255, 255, 0.6);
+  font: 400 1rem/1.445 "Jost", sans-serif;
+}
+
 .p {
   margin: 0;
   color: #fff;
@@ -957,5 +980,50 @@ img {
 
   .row-one-qualifications__col:nth-child(1) {
     margin-bottom: 30px;
+  }
+}
+.contact__container {
+  margin-bottom: calc(var(--section-margin) - 80px);
+  padding-top: 40px;
+}
+.contact__row {
+  justify-content: center;
+}
+
+.form-contact__c {
+  margin-bottom: 24px;
+}
+.form-contact__h {
+  margin-bottom: 24px;
+}
+.form-contact__p {
+  margin-bottom: 62px;
+}
+.form-contact__wrap {
+  margin-bottom: 40px;
+}
+.form-contact__i:not(:last-of-type) {
+  margin-bottom: 30px;
+}
+.form-contact__i:last-of-type {
+  margin-bottom: 20px;
+}
+.form-contact__textarea {
+  min-height: 112px;
+  margin-bottom: 42px;
+  color: rgba(255, 255, 255, 0.37);
+  resize: none;
+}
+.form-contact__textarea::placeholder {
+  color: rgba(255, 255, 255, 0.37);
+}
+.form-contact__b {
+  min-width: 152px;
+}
+
+@media screen and (max-width: 991px) {
+  .contact__container {
+    margin-bottom: var(--section-margin);
+    padding-top: 0;
   }
 }
