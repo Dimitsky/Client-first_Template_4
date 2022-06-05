@@ -92,6 +92,12 @@ img {
     --bs-gutter-x: 2rem;
   }
 }
+a:focus, button:focus, input:focus, textarea:focus {
+  box-shadow: 0px 0px 0px 2px #fff, 0px 0px 0px 4px #000;
+  outline-color: transparent;
+  outline-style: solid;
+}
+
 .a {
   color: var(--color-link);
   font: 500 1.125rem/1.445 "Jost", sans-serif;
@@ -189,6 +195,10 @@ img {
 .i::placeholder {
   color: rgba(255, 255, 255, 0.87);
   font: 400 1rem/1.445 "Jost", sans-serif;
+}
+.i.invalid {
+  outline: 4px solid red;
+  outline-offset: 0px;
 }
 
 .l {
@@ -555,8 +565,12 @@ img {
     margin-bottom: 40px;
   }
   .job__list {
-    grid-gap: 40px 40px;
+    grid-gap: 40px 12px;
     padding: 0;
+  }
+
+  .list-job__icon {
+    height: 25px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -620,7 +634,7 @@ img {
   background: rgba(0, 0, 0, 0.65);
   transition: opacity 0.4s ease;
 }
-.list-work__link:hover::after {
+.list-work__link:hover::after, .list-work__link:focus::after {
   opacity: 1;
 }
 .list-work__link:hover .list-work__img {
@@ -742,8 +756,9 @@ img {
 .list-blog__item:not(:last-child) {
   margin-bottom: 32px;
 }
-.list-blog__item {
+.list-blog__link {
   display: flex;
+  text-decoration: none;
 }
 .list-blog__img-wrap {
   flex: 0 0 186px;
@@ -778,7 +793,7 @@ img {
   }
 }
 @media screen and (max-width: 767px) {
-  .list-blog__item {
+  .list-blog__link {
     display: block;
   }
   .list-blog__img-wrap {
@@ -816,6 +831,12 @@ img {
   margin-bottom: 40px;
   padding-left: 5px;
 }
+.footer__social {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 .footer__copyright {
   color: rgba(255, 255, 255, 0.6);
 }
@@ -837,21 +858,15 @@ img {
   margin-bottom: 5px;
   line-height: 1.6;
 }
-.info-footer__social {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
 
-.social-info-footer__item:not(:last-child) {
+.social-footer__item:not(:last-child) {
   margin-right: 21px;
 }
-.social-info-footer__link {
+.social-footer__link {
   display: block;
   color: #fff;
 }
-.social-info-footer__icon {
+.social-footer__icon {
   display: block;
   color: inherit;
 }
@@ -1002,11 +1017,14 @@ img {
 .form-contact__wrap {
   margin-bottom: 40px;
 }
-.form-contact__i:not(:last-of-type) {
+.form-contact__l:not(:last-of-type) {
   margin-bottom: 30px;
 }
 .form-contact__i:last-of-type {
   margin-bottom: 20px;
+}
+.form-contact__error {
+  color: red;
 }
 .form-contact__textarea {
   min-height: 112px;

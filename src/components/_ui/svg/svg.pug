@@ -1,10 +1,10 @@
 - 
   //- Возвращает ширину и высоту для svg
   function getSize( viewBox ) {
-    let weight = viewBox.split( ' ' )[2];
+    let width = viewBox.split( ' ' )[2];
     let height = viewBox.split( ' ' )[3];
 
-    return { weight: weight, height: height };
+    return { width: width, height: height };
   }
 
 mixin svg( id, mod, viewBox )

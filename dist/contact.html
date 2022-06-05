@@ -2,12 +2,13 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/normalize.min.css" />
-    <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <script src="assets/js/script.js" defer="defer"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/normalize.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js" defer></script>
+    <script src="assets/js/validate.js" defer></script>
     <title>Client-first Template 4 - Contact page</title>
 </head>
 
@@ -15,11 +16,11 @@
     <header class="header">
         <div class="container-fluid header__container">
             <div class="row header__row">
-                <div class="col-2 header__col header__col--one"><a class="header__logo-link" href="index.html" aria-label="Home page"><svg class="svg header__logo-img" height="26" viewBox="0 0 106 26">
+                <div class="col-2 header__col header__col--one"><a class="header__logo-link" href="index.html" aria-label="Home page"><svg class="svg header__logo-img" width="106" height="26" viewBox="0 0 106 26">
                             <use href="assets/img/defs.svg#logo"></use>
                         </svg></a></div>
                 <div class="col-10 header__col header__col--two"><button class="burger header__burger" id="burger" type="button" aria-expanded="false"><span class="burger__item"></span></button>
-                    <nav class="header__nav nav-header" id="header-nav">
+                    <nav class="nav header__nav nav-header" id="header-nav">
                         <ul class="nav__list nav-header__list">
                             <li class="nav__item nav-header__item"><a class="nav__link nav-header__link" href="about.html">About me</a></li>
                             <li class="nav__item nav-header__item"><a class="nav__link nav-header__link" href="#">Services</a></li>
@@ -36,10 +37,10 @@
             <div class="container-fluid contact__container">
                 <div class="row contact__row">
                     <div class="col-12 col-md-9 col-xl-6">
-                        <form class="contact__form form-contact" action="#" method="post"><span class="c form-contact__c">Contact Me</span>
-                            <h2 class="h h--2 form-contact__h">Let's build something together... Get in touch with me. </h2>
+                        <form class="contact__form form-contact" action="#" method="post" novalidate><span class="c form-contact__c">Contact Me</span>
+                            <h1 class="h h--2 form-contact__h">Let's build something together... Get in touch with me. </h1>
                             <p class="p form-contact__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque tempor, malesuada adipiscing congue diam. Quis orci amet porttitor</p>
-                            <div class="form-contact__wrap"><label class="l form-contact__l" for="input-name">Name </label><input class="i form-contact__i" id="input-name" name="name" type="text" placeholder="James Robert" /><label class="l form-contact__l" for="input-email">E-mail</label><input class="i form-contact__i" id="input-email" name="email" type="email" placeholder="Jamesrobert@Finsweet.com" /><label class="l form-contact__l" for="input-subject">Subject</label><input class="i form-contact__i" id="input-subject" name="subject" type="text" placeholder="For web design work Enquire" /></div><label class="l form-contact__l" for="input-message">Message</label><textarea class="i form-contact__textarea" id="input-message" name="message" placeholder="Type your Message"></textarea><button class="b form-contact__b" type="submit">Submit</button>
+                            <div class="form-contact__wrap"><label class="l form-contact__l" for="input-name">Name <input class="i form-contact__i" id="input-name" name="name" type="text" placeholder="James Robert" pattern="[a-zA-Z]+ [a-zA-Z]+" required><span class="error form-contact__error" aria-live="polite"></span></label><label class="l form-contact__l" for="input-email">E-mail<input class="i form-contact__i" id="input-email" name="email" type="email" placeholder="Jamesrobert@Finsweet.com" required><span class="error form-contact__error" aria-live="polite"></span></label><label class="l form-contact__l" for="input-subject">Subject<input class="i form-contact__i" id="input-subject" name="subject" type="text" placeholder="For web design work Enquire" minlength="10"><span class="error form-contact__error" aria-live="polite"></span></label></div><label class="l form-contact__l" for="input-message">Message</label><textarea class="i form-contact__textarea" id="input-message" name="message" placeholder="Type your Message"></textarea><button class="b form-contact__b" type="submit">Submit</button>
                         </form>
                     </div>
                 </div>
@@ -57,39 +58,39 @@
                     <div class="footer__info info-footer">
                         <div class="info-footer__img-wrap">
                             <picture>
-                                <source type="image/webp" srcset="assets/img/footer/i-1@2x.webp 2x, assets/img/footer/i-1@1x.webp 1x" />
-                                <source type="image/jpg" srcset="assets/img/footer/i-1@2x.png 2x, assets/img/footer/i-1@1x.png 1x" /><img class="info-footer__img" src="assets/img/footer/i-1@1x.png" alt="My photo" />
+                                <source type="image/webp" srcset="assets/img/footer/i-1@2x.webp 2x, assets/img/footer/i-1@1x.webp 1x">
+                                <source type="image/jpg" srcset="assets/img/footer/i-1@2x.png 2x, assets/img/footer/i-1@1x.png 1x"><img class="info-footer__img" src="assets/img/footer/i-1@1x.png" alt="My photo">
                             </picture>
                         </div>
                         <div class="info-footer__wrap">
                             <h3 class="h h--3 info-footer__name">James Robertson</h3><span class="p p--large info-footer__job">Webflow Developer</span>
                         </div>
                     </div>
-                    <ul class="info-footer__social social-info-footer">
-                        <li class="social-info-footer__item"><a class="a a--sm social-info-footer__link" href="#" title="Facebook"><svg class="svg social-info-footer__icon" height="42" viewBox="0 0 42 42">
+                    <ul class="footer__social social-footer">
+                        <li class="social-footer__item"><a class="a a--sm social-footer__link" href="#" title="Facebook"><svg class="svg social-footer__icon" width="42" height="42" viewBox="0 0 42 42">
                                     <use href="assets/img/defs.svg#facebook"></use>
                                 </svg></a></li>
-                        <li class="social-info-footer__item"><a class="a a--sm social-info-footer__link" href="#" title="Linkedin"><svg class="svg social-info-footer__icon" height="42" viewBox="0 0 42 42">
+                        <li class="social-footer__item"><a class="a a--sm social-footer__link" href="#" title="Linkedin"><svg class="svg social-footer__icon" width="42" height="42" viewBox="0 0 42 42">
                                     <use href="assets/img/defs.svg#linkedin"></use>
                                 </svg></a></li>
-                        <li class="social-info-footer__item"><a class="a a--sm social-info-footer__link" href="#" title="Twitter"><svg class="svg social-info-footer__icon" height="42" viewBox="0 0 42 42">
+                        <li class="social-footer__item"><a class="a a--sm social-footer__link" href="#" title="Twitter"><svg class="svg social-footer__icon" width="42" height="42" viewBox="0 0 42 42">
                                     <use href="assets/img/defs.svg#twitter"></use>
                                 </svg></a></li>
-                        <li class="social-info-footer__item"><a class="a a--sm social-info-footer__link" href="#" title="Dribbble"><svg class="svg social-info-footer__icon" height="42" viewBox="0 0 42 42">
+                        <li class="social-footer__item"><a class="a a--sm social-footer__link" href="#" title="Dribbble"><svg class="svg social-footer__icon" width="42" height="42" viewBox="0 0 42 42">
                                     <use href="assets/img/defs.svg#dribbble"></use>
                                 </svg></a></li>
-                        <li class="social-info-footer__item"><a class="a a--sm social-info-footer__link" href="#" title="Behance"><svg class="svg social-info-footer__icon" height="42" viewBox="0 0 42 42">
+                        <li class="social-footer__item"><a class="a a--sm social-footer__link" href="#" title="Behance"><svg class="svg social-footer__icon" width="42" height="42" viewBox="0 0 42 42">
                                     <use href="assets/img/defs.svg#behance"></use>
                                 </svg></a></li>
                     </ul>
                 </div>
             </div>
             <div class="row footer__bottom bottom-footer">
-                <div class="col-md-5 col-lg-3 bottom-footer__col">
+                <div class="col-md-5 bottom-footer__col">
                     <p class="p footer__copyright">© 2020 Finsweet. Powered by Webflow</p>
                 </div>
-                <div class="col-md-7 col-lg-4 bottom-footer__col">
-                    <nav class="footer__nav nav-footer">
+                <div class="col-md-7 bottom-footer__col">
+                    <nav class="nav footer__nav nav-footer">
                         <ul class="nav__list nav-footer__list">
                             <li class="nav__item nav-footer__item"><a class="nav__link nav-footer__link" href="about.html">About me</a></li>
                             <li class="nav__item nav-footer__item"><a class="nav__link nav-footer__link" href="#">Services</a></li>
