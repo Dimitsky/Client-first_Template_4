@@ -9,13 +9,13 @@ section( class="contact" )
           div( class="form-contact__wrap" )
             label( class="l form-contact__l", for="input-name" ) Name 
               input( class="i form-contact__i", id="input-name", name="name", type="text", placeholder="James Robert", pattern="[a-zA-Z]+ [a-zA-Z]+", required )
-              span( class="error form-contact__error", aria-live="polite")
+              span( class="error form-contact__error", role="status", aria-live="polite")
             label( class="l form-contact__l", for="input-email" ) E-mail
               input( class="i form-contact__i", id="input-email", name="email", type="email", placeholder="Jamesrobert@Finsweet.com", required )
-              span( class="error form-contact__error", aria-live="polite")
+              span( class="error form-contact__error", role="status", aria-live="polite")
             label( class="l form-contact__l", for="input-subject" ) Subject
               input( class="i form-contact__i", id="input-subject", name="subject", type="text", placeholder="For web design work Enquire", minlength="10" )
-              span( class="error form-contact__error", aria-live="polite")
+              span( class="error form-contact__error", role="status", aria-live="polite")
           label( class="l form-contact__l", for="input-message" ) Message
           textarea( class="i form-contact__textarea", id="input-message", name="message", placeholder="Type your Message" )
           button( class="b form-contact__b", type="submit" ) Submit
